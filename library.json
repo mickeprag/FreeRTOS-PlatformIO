@@ -1,0 +1,29 @@
+{
+    "name": "FreeRTOS",
+    "version": "10.4.4",
+    "description": "FreeRTOS kernel source for platformio",
+    "keywords": "FreeRTOS, rtos, kernel",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mickeprag/FreeRTOS-PlatformIO.git"
+    },
+    "authors": {
+        "name": "Micke Prag",
+        "email": "micke@orbital-systems.com",
+        "maintainer": true
+    },
+    "build": {
+        "srcDir": "src",
+        "srcFilter": [
+            "+<*.c>",
+            "+<portable/MemMang/heap_5.c>",
+            "+<portable/GCC/ARM_CM3/*.c>"
+        ],
+        "flags": [
+            "-I src/include",
+            "-I src/portable/GCC/ARM_CM3"
+        ],
+        "libLDFMode": "deep+",
+        "libArchive": "false"
+    }
+}
