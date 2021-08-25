@@ -17,11 +17,11 @@
         "srcFilter": [
             "+<*.c>",
             "+<portable/MemMang/heap_5.c>",
-            "+<portable/GCC/ARM_CM3/*.c>"
+            "+<portable/GCC/ARM_CM4F/*.c>"
         ],
         "flags": [
             "-I src/include",
-            "-I src/portable/GCC/ARM_CM3"
+            "-I src/portable/GCC/ARM_CM4F"
         ],
         "libLDFMode": "deep+",
         "libArchive": "false"
